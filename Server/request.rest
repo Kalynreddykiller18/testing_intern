@@ -1,0 +1,44 @@
+GET  http://localhost:5000/user/
+
+###
+GET  http://localhost:5000/user/60bb241eaed740565c847694
+###
+POST http://localhost:5000/user/add
+Content-Type: application/json
+
+{
+    "fullname":"Test1",
+    "email":"test1@gmail.com",
+    "password":"Test1"
+}
+
+###
+POST  http://localhost:5000/user/forgot-password
+Content-Type: application/json
+
+{
+    "email":"kalyanbejjanki9010@gmail.com"
+}
+
+###
+DELETE http://localhost:5000/user/delete/6011322ccb241b6b647d2e41
+
+###
+GET http://localhost:5000/user/reset/25c97c2b22f079b8c5910c2ebb899e60f8268b0
+
+###
+POST http://localhost:5000/user/setnewpassword/dollysadhanareddy@gmail.com
+Content-Type: application/json
+
+{
+    "password":"Killer_Kalyan"
+}
+
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "email":"sadhanadolly@gmail.com",
+    "password":"ILoveYouFotti"
+}
